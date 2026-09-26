@@ -23,7 +23,7 @@ Everything works without the internet. Templates, searches, edits, tasks, and sc
 ## Installation
 
 1. Open the [latest release](https://github.com/V2P-Dev/Yookip/releases/latest).
-2. Download `V2PDev.Yookip-win-Setup.exe` and run it. No administrator rights are required.
+2. Download `Yookip-<version>-Setup.exe` and run it. No administrator rights are required.
 
 Updates arrive inside the app. The manifest signature and package SHA-256 are verified before installation, and a backup is created before any database change.
 
@@ -32,7 +32,7 @@ Updates arrive inside the app. The manifest signature and package SHA-256 are ve
 Each release includes `SHA256SUMS.txt`, `release-manifest.json`, and its signature `release-manifest.json.sig`.
 
 ```powershell
-Get-FileHash .\V2PDev.Yookip-win-Setup.exe -Algorithm SHA256
+Get-FileHash .\Yookip-0.2.0-Setup.exe -Algorithm SHA256
 ```
 
 Compare the result with the matching line in `SHA256SUMS.txt`.
