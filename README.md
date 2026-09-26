@@ -21,7 +21,7 @@ Yookip заменяет разрозненные текстовые файлы �
 ## Установка
 
 1. Откройте [последний выпуск](https://github.com/V2P-Dev/Yookip/releases/latest).
-2. Скачайте `V2PDev.Yookip-Setup.exe` и запустите. Права администратора не нужны.
+2. Скачайте `V2PDev.Yookip-win-Setup.exe` и запустите. Права администратора не нужны.
 
 Обновления приходят внутри приложения. Перед установкой проверяются подпись манифеста и SHA-256 пакета; перед изменением базы данных создаётся резервная копия.
 
@@ -30,7 +30,7 @@ Yookip заменяет разрозненные текстовые файлы �
 К каждому выпуску приложены `SHA256SUMS.txt`, `release-manifest.json` и его подпись `release-manifest.json.sig`.
 
 ```powershell
-Get-FileHash .\V2PDev.Yookip-Setup.exe -Algorithm SHA256
+Get-FileHash .\V2PDev.Yookip-win-Setup.exe -Algorithm SHA256
 ```
 
 Сравните результат со строкой в `SHA256SUMS.txt`.
