@@ -1,42 +1,44 @@
 # Yookip
 
-Личный офлайн-помощник сотрудника первой линии поддержки для Windows 10 и 11.
+[Русская версия](README.ru.md)
 
-Yookip заменяет разрозненные текстовые файлы быстрой библиотекой шаблонов ответов: найти, подготовить и скопировать нужный ответ — за секунды, не меняя сохранённый оригинал.
+A personal, offline-first desktop assistant for Windows 10 and 11.
 
-## Возможности
+Yookip replaces scattered text files with a fast library of response templates: find, prepare, and copy the right text in seconds without changing the saved original.
 
-- **Шаблоны ответов** — разделы, метки, мгновенный поиск по тысячам шаблонов, копирование в один клик, временная правка без порчи оригинала.
-- **Справочник** — постоянное редактирование и импорт из TXT.
-- **Главная** — карточка расписания на сегодня, отсчёт до перерыва, необязательные карточки погоды, новостей и фактов.
-- **Задачи и расписание** — планировщик, график смен (в т. ч. ночных), распознавание графика с изображения прямо на компьютере.
-- **Напоминания** — о перерывах и конце рабочего дня.
-- **Граф** — наглядная карта связей шаблонов.
-- **Трей и резервные копии** — работа из трея, экспорт и восстановление данных.
+## Features
 
-## Приватность
+- **Response templates** — sections, labels, instant search across thousands of templates, one-click copy, and temporary edits that keep the original intact.
+- **Reference** — permanent editing and TXT import.
+- **Home** — today's schedule, a countdown to the next break, and optional weather, news, and fact cards.
+- **Tasks and schedule** — a planner, work shifts (including overnight), and on-device recognition of schedules from images.
+- **Reminders** — before breaks and before the end of the workday.
+- **Graph** — a visual map of template relationships.
+- **Tray and backups** — work from the tray; export and restore your data.
 
-Всё работает без интернета. Шаблоны, поиск, правки, задачи и изображения графика никогда не покидают компьютер. Сетевые карточки необязательны и отключаемы.
+## Privacy
 
-## Установка
+Everything works without the internet. Templates, searches, edits, tasks, and schedule images never leave your computer. Network cards are optional and can be turned off.
 
-1. Откройте [последний выпуск](https://github.com/V2P-Dev/Yookip/releases/latest).
-2. Скачайте `V2PDev.Yookip-win-Setup.exe` и запустите. Права администратора не нужны.
+## Installation
 
-Обновления приходят внутри приложения. Перед установкой проверяются подпись манифеста и SHA-256 пакета; перед изменением базы данных создаётся резервная копия.
+1. Open the [latest release](https://github.com/V2P-Dev/Yookip/releases/latest).
+2. Download `V2PDev.Yookip-win-Setup.exe` and run it. No administrator rights are required.
 
-## Проверка файлов
+Updates arrive inside the app. The manifest signature and package SHA-256 are verified before installation, and a backup is created before any database change.
 
-К каждому выпуску приложены `SHA256SUMS.txt`, `release-manifest.json` и его подпись `release-manifest.json.sig`.
+## Verifying downloads
+
+Each release includes `SHA256SUMS.txt`, `release-manifest.json`, and its signature `release-manifest.json.sig`.
 
 ```powershell
 Get-FileHash .\V2PDev.Yookip-win-Setup.exe -Algorithm SHA256
 ```
 
-Сравните результат со строкой в `SHA256SUMS.txt`.
+Compare the result with the matching line in `SHA256SUMS.txt`.
 
-## Версии
+## Versioning
 
-Проект следует [Semantic Versioning](https://semver.org/lang/ru/): исправления повышают последнюю цифру, новые возможности — среднюю. История изменений — в разделе [Releases](https://github.com/V2P-Dev/Yookip/releases).
+Yookip follows [Semantic Versioning](https://semver.org/): fixes increase the last number, new features increase the middle one. See [Releases](https://github.com/V2P-Dev/Yookip/releases) for the change history.
 
-Исходный код хранится в отдельном закрытом репозитории; здесь публикуются только установщики, пакеты обновлений и их метаданные.
+The source code is kept in a separate private repository; this repository publishes only installers, update packages, and their metadata.
